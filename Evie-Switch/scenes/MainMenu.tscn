@@ -1,0 +1,327 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://sprites/icons/gui/EvieLogoText.png" type="Texture" id=2]
+[ext_resource path="res://fonts/m5x7/TextTheme.tres" type="Theme" id=3]
+[ext_resource path="res://fonts/m5x7/SmallerTextTheme.tres" type="Theme" id=4]
+[ext_resource path="res://fonts/m5x7/SmallTextTheme.tres" type="Theme" id=6]
+[ext_resource path="res://scenes/settings/Settings.tscn" type="PackedScene" id=7]
+[ext_resource path="res://addons/CheatCoder/CheatCodeListener.gd" type="Script" id=8]
+[ext_resource path="res://addons/controller_icons/objects/TextureRect.gd" type="Script" id=9]
+[ext_resource path="res://addons/CheatCoder/Presets/Konami.tres" type="Resource" id=10]
+[ext_resource path="res://addons/controller_icons/assets/key/enter_alt.png" type="Texture" id=11]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="AudioPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 960, 512 )
+
+[node name="CreditsContainer" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -272.0
+margin_bottom = 64.0
+theme = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LonelyPieCredit" type="Label" parent="CreditsContainer"]
+margin_right = 272.0
+margin_bottom = 30.0
+text = "Evie made by: LonelyPie"
+align = 2
+
+[node name="ModCredit" type="Label" parent="CreditsContainer"]
+margin_top = 34.0
+margin_right = 272.0
+margin_bottom = 64.0
+text = "Mod made by: ModCreator"
+align = 2
+
+[node name="GameInfo" type="HBoxContainer" parent="."]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 240.0
+margin_bottom = 84.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="GameName" type="TextureRect" parent="GameInfo"]
+margin_right = 162.0
+margin_bottom = 76.0
+rect_min_size = Vector2( 162, 76 )
+texture = ExtResource( 2 )
+expand = true
+
+[node name="GameVersion" type="Label" parent="GameInfo"]
+margin_left = 166.0
+margin_top = 23.0
+margin_right = 242.0
+margin_bottom = 53.0
+theme = ExtResource( 6 )
+text = "Version"
+
+[node name="ModInfo" type="HBoxContainer" parent="."]
+margin_left = 16.0
+margin_top = 75.0
+margin_right = 224.0
+margin_bottom = 107.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ModName" type="Label" parent="ModInfo"]
+margin_top = 1.0
+margin_right = 92.0
+margin_bottom = 31.0
+theme = ExtResource( 6 )
+text = "ModName"
+
+[node name="ModVersion" type="Label" parent="ModInfo"]
+margin_left = 96.0
+margin_top = 9.0
+margin_right = 154.0
+margin_bottom = 22.0
+theme = ExtResource( 4 )
+text = "ModVersion"
+
+[node name="Splashes" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 104.0
+margin_right = 224.0
+margin_bottom = 136.0
+theme = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0.647059, 1, 1 )
+text = "Splash Text"
+
+[node name="Splash" type="Node" parent="."]
+
+[node name="SplashCheatCode" type="Node" parent="Splash"]
+script = ExtResource( 8 )
+code = ExtResource( 10 )
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = -134.0
+margin_right = 192.0
+margin_bottom = -12.0
+theme = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="MainButtons"]
+margin_right = 176.0
+margin_bottom = 38.0
+focus_neighbour_top = NodePath("../QuitButton")
+focus_neighbour_bottom = NodePath("../QuitButton")
+text = "PLAY"
+flat = true
+align = 0
+
+[node name="OptionsButton" type="Button" parent="MainButtons"]
+margin_top = 42.0
+margin_right = 176.0
+margin_bottom = 80.0
+disabled = true
+text = "OPTIONS"
+flat = true
+align = 0
+
+[node name="QuitButton" type="Button" parent="MainButtons"]
+margin_top = 84.0
+margin_right = 176.0
+margin_bottom = 122.0
+focus_neighbour_top = NodePath("../StartButton")
+focus_neighbour_bottom = NodePath("../StartButton")
+text = "EXIT"
+flat = true
+align = 0
+
+[node name="ExtraButtons" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -168.0
+margin_top = -178.0
+margin_right = -8.0
+margin_bottom = -56.0
+theme = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ExtrasButton" type="Button" parent="ExtraButtons"]
+margin_right = 160.0
+margin_bottom = 38.0
+disabled = true
+text = "EXTRAS"
+align = 2
+
+[node name="ModsButton" type="Button" parent="ExtraButtons"]
+margin_top = 42.0
+margin_right = 160.0
+margin_bottom = 80.0
+focus_neighbour_top = NodePath("../CreditsButton")
+focus_neighbour_bottom = NodePath("../CreditsButton")
+text = "MODS"
+align = 2
+
+[node name="CreditsButton" type="Button" parent="ExtraButtons"]
+margin_top = 84.0
+margin_right = 160.0
+margin_bottom = 122.0
+focus_neighbour_top = NodePath("../ModsButton")
+focus_neighbour_bottom = NodePath("../ModsButton")
+text = "CREDITS"
+align = 2
+icon_align = 1
+
+[node name="BottomButtons" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -136.0
+margin_top = -46.0
+margin_right = 136.0
+margin_bottom = -16.0
+theme = ExtResource( 6 )
+custom_constants/separation = 13
+alignment = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="GithubButton" type="Button" parent="BottomButtons"]
+margin_left = 3.0
+margin_right = 67.0
+margin_bottom = 30.0
+focus_neighbour_left = NodePath("../../MainButtons/QuitButton")
+focus_neighbour_top = NodePath("../../GameJoltContainer/LoginWithGJ")
+custom_colors/font_color_focus = Color( 0, 0.368627, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0.368627, 1, 1 )
+text = "Github"
+
+[node name="BugsButton" type="Button" parent="BottomButtons"]
+margin_left = 80.0
+margin_right = 172.0
+margin_bottom = 30.0
+focus_neighbour_top = NodePath("../../GameJoltContainer/LoginWithGJ")
+custom_colors/font_color_focus = Color( 1, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
+text = "MM_BUGS"
+
+[node name="WebsiteButton" type="Button" parent="BottomButtons"]
+margin_left = 185.0
+margin_right = 269.0
+margin_bottom = 30.0
+focus_neighbour_top = NodePath("../../GameJoltContainer/LoginWithGJ")
+custom_colors/font_color_focus = Color( 0, 0.368627, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0.368627, 1, 1 )
+text = "MM_WEB"
+
+[node name="BugHaters" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -88.0
+margin_top = -86.0
+margin_right = 88.0
+margin_bottom = -56.0
+theme = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "MM_BUGHATERS"
+align = 1
+
+[node name="Input" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -120.0
+margin_top = -46.0
+margin_right = -8.0
+margin_bottom = -6.0
+alignment = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ControllerTextureRect" type="TextureRect" parent="Input"]
+margin_left = 32.0
+margin_right = 72.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+texture = ExtResource( 11 )
+expand = true
+script = ExtResource( 9 )
+path = "ui_accept"
+
+[node name="UseLabel" type="Label" parent="Input"]
+margin_left = 76.0
+margin_top = 5.0
+margin_right = 112.0
+margin_bottom = 35.0
+theme = ExtResource( 6 )
+text = "USE"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Settings" parent="CanvasLayer" instance=ExtResource( 7 )]
+
+[node name="GameJoltContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -128.0
+margin_right = 128.0
+margin_bottom = 64.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="GJAcc" type="Label" parent="GameJoltContainer"]
+margin_right = 256.0
+margin_bottom = 63.0
+theme = ExtResource( 6 )
+text = "GameJolt:
+not connected"
+align = 1
+
+[node name="LoginWithGJ" type="Button" parent="GameJoltContainer"]
+margin_top = 67.0
+margin_right = 256.0
+margin_bottom = 97.0
+theme = ExtResource( 6 )
+custom_colors/font_color_focus = Color( 0, 0.576471, 0.156863, 1 )
+custom_colors/font_color = Color( 0, 1, 0.27451, 1 )
+custom_colors/font_color_hover = Color( 0, 0.576471, 0.156863, 1 )
+custom_colors/font_color_pressed = Color( 0, 0.576471, 0.156863, 1 )
+text = "Login With Game Jolt"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="cheat_activated" from="Splash/SplashCheatCode" to="." method="_on_SplashCheatCode_cheat_activated"]
+[connection signal="pressed" from="MainButtons/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="MainButtons/OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="pressed" from="MainButtons/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="ExtraButtons/ModsButton" to="." method="_on_ModsButton_pressed"]
+[connection signal="pressed" from="ExtraButtons/CreditsButton" to="." method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="BottomButtons/GithubButton" to="." method="_on_GithubButton_pressed"]
+[connection signal="focus_entered" from="BottomButtons/BugsButton" to="." method="_on_BugsButton_focus_entered"]
+[connection signal="focus_exited" from="BottomButtons/BugsButton" to="." method="_on_BugsButton_focus_exited"]
+[connection signal="mouse_entered" from="BottomButtons/BugsButton" to="." method="_on_BugsButton_focus_entered"]
+[connection signal="mouse_exited" from="BottomButtons/BugsButton" to="." method="_on_BugsButton_focus_exited"]
+[connection signal="pressed" from="BottomButtons/BugsButton" to="." method="_on_BugsButton_pressed"]
+[connection signal="pressed" from="BottomButtons/WebsiteButton" to="." method="_on_WebsiteButton_pressed"]
+[connection signal="pressed" from="GameJoltContainer/LoginWithGJ" to="." method="_on_LoginWithGJ_pressed"]

@@ -1,0 +1,38 @@
+keys,en,pl,de
+PLAY,Play,Graj,Spielen
+OPTIONS,Options,Ustawienia,Optionen
+EXIT,Exit,Wyjdź,Ausgang
+MM_BUGS,Bugs,Błędy,Fehler
+MM_WEB,Website,Strona,Webseite
+MM_BUGHATERS,We Hate Bugs >:(,Nie lubimy Błędów >:(,Wir hassen Fehler >:(
+EXTRAS,Extras,Dodatki,Extras
+MODS,Mods,Mody,Modifikationen
+CREDITS,Credits,Autorzy,Kredite
+GJLOGIN,GameJolt Login,Konto GameJolt,GameJolt-Anmeldung
+PAUSE,Pause,Pauza,Pause
+S_C_AUDIO,Audio,Audio,Audio
+S_C_VIDEO,Video,Grafika,Video
+S_FULLSCREEN,Fullscreen,Pełny Ekran,Ganzer Bildschirm
+S_RES,Screen Resolution,Rozdzielczość Ekranu,Bildschirmauflösung
+S_C_OTHER,Other,Inne,Sonstiges
+S_LANG,Language,Język,Sprache
+S_LANG_EN,English (en),Angielski (en),Englisch (en)
+S_LANG_PL,Polish (pl),Polski (pl),Polieren (pl)
+S_LANG_DE,German (de),Niemiecki (de),Deutsch (de)
+S_SAVE,Save,Zapisz,Speichern
+S_SAVE_SAE,Save & Close,Zapisz i Zamknij,Speichern & schließen
+S_SAVE_EXIT,Close,Zamknij,Nahe
+SAV_NAME:,Name:,Nazwa:,Name:
+SAV_SAVEAT:,Saved at:,Zapisano:,Gespeichert bei:
+SAV_TIME:,Time played:,Czas gry:,Spielzeit:
+RESUME,Resume,Wznów,Fortsetzen
+SAE,Save and Exit to:,Zapisz i Wyjdź do:,Speichern und beenden zu:
+PLEASED,please dont,prosze nie,bitte nicht
+MAINMENU,Main Menu,Menu Główne,Hauptmenü
+CANCEL,Cancel,Anuluj,Absagen
+PHOTOMODE,Photo Mode,Tryb Zdjęć,Fotomodus
+USE,Use,Użyj,Verwenden
+BACK,Back,Wstecz,Der Rücken
+AUTOSAVEMSG,This game uses Auto Save.\nWhen you'll see this image DON'T exit the game.,"Ta gra korzysta z automatycznego zapisywania.\nKiedy zobaczysz ten obraz, NIE wychodź z gry.","Dieses Spiel verwendet die automatische Speicherung.\nWenn Sie dieses Bild sehen, verlassen Sie das Spiel NICHT."
+MODS_APPLY,Apply Mod,Zastosuj Mody,Mod anwenden
+MODS_DOWNLOAD,Download Mods,Pobierz Mody,Mods herunterladen
