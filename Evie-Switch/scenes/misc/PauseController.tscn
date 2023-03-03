@@ -109,7 +109,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5, 0.7 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 736, -88 ), Vector2( 736, 520 ), Vector2( 736, 496 ) ]
+"values": [ Vector2( 416, -88 ), Vector2( 416, 345 ), Vector2( 416, 320 ) ]
 }
 
 [sub_resource type="Animation" id=7]
@@ -249,13 +249,12 @@ valign = 1
 [node name="ActNumber" type="Label" parent="Panel/LevelInfoContainer"]
 margin_top = 34.0
 margin_right = 106.0
-margin_bottom = 47.0
+margin_bottom = 64.0
 theme = ExtResource( 3 )
 text = "ActNumber"
 valign = 1
 
 [node name="DateTime" type="HBoxContainer" parent="Panel"]
-modulate = Color( 1, 1, 1, 0 )
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -34.0
@@ -263,7 +262,7 @@ margin_right = 98.0
 alignment = 2
 
 [node name="Date" type="HBoxContainer" parent="Panel/DateTime"]
-margin_right = 60.0
+margin_right = 100.0
 margin_bottom = 34.0
 
 [node name="DateIcon" type="TextureRect" parent="Panel/DateTime/Date"]
@@ -274,15 +273,15 @@ stretch_mode = 4
 
 [node name="DateLabel" type="Label" parent="Panel/DateTime/Date"]
 margin_left = 20.0
-margin_top = 10.0
-margin_right = 60.0
-margin_bottom = 23.0
+margin_top = 2.0
+margin_right = 100.0
+margin_bottom = 32.0
 theme = ExtResource( 3 )
 text = "0.0.0000"
 
 [node name="Time" type="HBoxContainer" parent="Panel/DateTime"]
-margin_left = 64.0
-margin_right = 98.0
+margin_left = 104.0
+margin_right = 152.0
 margin_bottom = 34.0
 
 [node name="TimeIcon" type="TextureRect" parent="Panel/DateTime/Time"]
@@ -293,14 +292,13 @@ stretch_mode = 4
 
 [node name="TimeLabel" type="Label" parent="Panel/DateTime/Time"]
 margin_left = 20.0
-margin_top = 10.0
-margin_right = 34.0
-margin_bottom = 23.0
+margin_top = 2.0
+margin_right = 48.0
+margin_bottom = 32.0
 theme = ExtResource( 3 )
 text = "0:0"
 
 [node name="Input" type="HBoxContainer" parent="Panel"]
-modulate = Color( 1, 1, 1, 0 )
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -398,7 +396,8 @@ margin_right = 224.0
 margin_bottom = -0.00012207
 custom_styles/panel = SubResource( 4 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_use_anchors_": false
 }
 
 [node name="ExitLabel" type="Label" parent="QuitPanel"]
