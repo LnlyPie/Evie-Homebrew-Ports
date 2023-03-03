@@ -11,7 +11,7 @@ _(Untested)_
  - [Source code](https://github.com/LnlyPie/Evie-Homebrew-Ports/tree/main/Evie-Vita)
  - Game Folder: `sdmc:/switch/EvieGame`
 ### ![](https://img.shields.io/badge/Nintendo_Switch-E60012?style=for-the-badge&logo=nintendo-switch&logoColor=white):
-_(Untested)_
+_(Tested by: @Stary2001)_
  - [.nro file](https://github.com/LnlyPie/Evie-Homebrew-Ports/releases/tag/v0.2.3) (Evie v.0.2.3) ([Godot v.3.3.4 Switch Port](https://github.com/Stary2001/godot))
  - [Source code](https://github.com/LnlyPie/Evie-Homebrew-Ports/tree/main/Evie-Switch)
  - Game Folder: `not sure for now`
