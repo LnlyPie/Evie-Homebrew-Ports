@@ -9,7 +9,7 @@ Homebrew ports of Evie to various consoles
 _(Untested)_
  - [.vpk file](https://github.com/LnlyPie/Evie-Homebrew-Ports/releases/tag/v0.2.3) (Evie v.0.2.3) ([Godot v.3.5-rc5 PS Vita Port](https://github.com/SonicMastr/godot-vita))
  - [Source code](https://github.com/LnlyPie/Evie-Vita)
- - Game Folder: `not sure for now`
+ - Game Folder: `ux0:data/EvieGame`
 ### ![](https://img.shields.io/badge/Nintendo_Switch-E60012?style=for-the-badge&logo=nintendo-switch&logoColor=white):
 _(Tested by: @Stary2001)_
  - [.nro file](https://github.com/LnlyPie/Evie-Homebrew-Ports/releases/tag/v0.2.3) (Evie v.0.2.3) ([Godot v.3.5.1 Switch Port](https://github.com/Stary2001/godot))
