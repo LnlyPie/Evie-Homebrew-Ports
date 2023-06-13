@@ -10,7 +10,7 @@ _(Tested by: @AndusDEV)_
  - [.vpk file](https://github.com/LnlyPie/Evie-Homebrew-Ports/releases/tag/v0.4.0.1) (Latest: Evie v.0.4.0.1) ([Godot v.3.6-beta PS Vita Port](https://github.com/SonicMastr/godot-vita/actions/runs/4623774966))
  - [Source code](https://github.com/LnlyPie/Evie-Vita)
  - Game Folder: `ux0:data/EvieGame`
-### ![](https://img.shields.io/badge/Nintendo_Switch-E60012?style=for-the-badge&logo=nintendo-switch&logoColor=white):
+### ![](https://img.shields.io/badge/Nintendo_Switch-E60012?style=for-the-badge&logo=nintendo-switch&logoColor=white) _(Abandoned)_:
 _(Tested by: @Stary2001)_
  - [.nro file](https://github.com/LnlyPie/Evie-Homebrew-Ports/releases/tag/v0.4.0.1) (Latest: Evie v.0.4.0.1) ([Godot v.3.5.1 Switch Port](https://github.com/Stary2001/godot))
  - [Source code](https://github.com/LnlyPie/Evie-Switch)
