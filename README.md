@@ -12,7 +12,7 @@ _(Tested by: @AndusDEV)_
  - Game Folder: `ux0:data/EvieGame`
 ### ![](https://img.shields.io/badge/Nintendo_Switch-E60012?style=for-the-badge&logo=nintendo-switch&logoColor=white) _(Abandoned)_:
 _(Tested by: @Stary2001)_
- - [Download .nro file](https://github.com/LnlyPie/Evie-Homebrew-Ports/releases/tag/v0.4.0.1) (Latest: Evie v.0.4.0.1) ([Godot v.3.5.1 Switch Port](https://github.com/Stary2001/godot))
+ - **[Deleted]**
  - [Source code](https://github.com/LnlyPie/Evie-Switch)
  - Game Folder: `sdmc:/switch/EvieGame`
 
@@ -22,8 +22,3 @@ _(Tested by: @Stary2001)_
  - Drop it onto your PS Vita
  - Install through application like VitaShell
  - Run Evie from the menu
-### Nintendo Switch:
- - Download latest .nro file
- - Drop it onto your Nintendo Switch SD Card to the `sdmc:/switch/` folder
- - Insert the SD Card back
- - Run Evie from the Homebrew Launcher
